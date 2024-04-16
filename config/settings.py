@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chinese',
+    "customer"
 ]
 
 MIDDLEWARE = [
@@ -74,9 +75,13 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+   'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'food_site2',
+        'USER': 'postgres',
+        'PASSWORD': '2475',
+        'HOST': 'localhost',  # 또는 PostgreSQL 서버의 IP 주소
+        'PORT': '5432',       # PostgreSQL의 기본 포트 번호
     }
 }
 
