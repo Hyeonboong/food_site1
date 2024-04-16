@@ -1,4 +1,3 @@
-# views.py
 from django.shortcuts import render
 from chinese.models import Category, Food
 # Create your views here.
